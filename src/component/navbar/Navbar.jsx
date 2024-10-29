@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -54,10 +55,12 @@ const Navbar = () => {
             </ul>
 
             <a
-              href="login.html"
+              href=""
               class="i-btn btn--md d-xl-none d-flex capsuled btn--primary"
             >
+            <Link to="/login">
               Sign In
+              </Link>
             </a>
           </div>
 
@@ -65,10 +68,13 @@ const Navbar = () => {
            
 
             <a
-              href="login.html"
+              href=""
               class="i-btn btn--md d-xl-flex d-none capsuled btn--primary-outline"
             >
+             <Link to="/login">
               Sign In
+              </Link>
+            
             </a>
 
             <div class="sidebar-btn d-xl-none d-flex">

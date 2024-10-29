@@ -1,112 +1,77 @@
 import React from 'react'
-
+import { MDBAccordion, MDBAccordionItem, MDBContainer } from "mdb-react-ui-kit";
+import Navbar from '../navbar/Navbar';
+import Header from '../Header/Header';
 const Frequently = () => {
   return (
-    <div class="testimonial-section pt-110 pb-110">
-    <div class="quote">
-        <i class="bi bi-quote"></i>
-    </div>
+    <>
+    <Header/>
+    <Navbar/>
+
+    <div class="inner-banner img-adjust">
     <div class="linear-left"></div>
+    <div class="linear-center"></div>
+    <div class="linear-right"></div>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-5">
-                <div class="section-title text-center mb-60">
-                    <h2>Success Stories from Our Clients</h2>
-                    <p>Discover how FinFunder has empowered individuals and businesses in their crypto trading and investment journey. </p>
-                </div>
-            </div>
-        </div>
+        <h2 class="inner-banner-title">Faq</h2>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Faq</li>
+            </ol>
+        </nav>
+    </div>
+</div>
 
-        <div class="row justify-content-center align-items-center gy-5 mb-30">
-            <div class="col-xl-3">
-                <div class="testimonial-card">
-                    <h5>Amazing !</h5>
-                    <ul>
-                                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                                                                <li><i class="bi bi-star-fill"></i></li>
-                                                                                                                <li><i class="bi bi-star-fill"></i></li>
-                                                                                                                <li><i class="bi bi-star-fill"></i></li>
-                                                                                                                <li><i class="bi bi-star"></i></li>
-                                                                        </ul>
-                    <p><span>885 Reviews</span></p>
-                </div>
-            </div>
 
-            <div class="col-xl-9">
-                <div class="swiper testimonial-slider">
-                    <div class="swiper-wrapper">
-                                                    <div class="swiper-slide">
-                                <div class="testimonial-item">
-                                    <div class="content">
-                                        <p>As a professional in finance, I&#039;m impressed by FinFunder&#039;s precise market analytics and user-friendly interface. It&#039;s revolutionized the way I approach crypto investment. Highly recommended for those who value data-driven decisions.</p>
-                                        <div class="designation">
-                                            <h6>Alex Johnson</h6>
-                                            <span>Financial Analyst</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="swiper-slide">
-                                <div class="testimonial-item">
-                                    <div class="content">
-                                        <p> FinFunder&#039;s commitment to security and innovative technology stands out in the crypto world. It&#039;s the only platform I trust for managing my diverse crypto portfolio. The interface is incredibly intuitive, even for beginners.</p>
-                                        <div class="designation">
-                                            <h6>Emily Torres</h6>
-                                            <span>Tech Entrepreneur</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="swiper-slide">
-                                <div class="testimonial-item">
-                                    <div class="content">
-                                        <p>What I love about FinFunder is the community aspect. It&#039;s not just a trading platform; it&#039;s a hub of knowledge and insights. The support team is fantastic, always ready to help with any queries.</p>
-                                        <div class="designation">
-                                            <h6>David Kim</h6>
-                                            <span>Crypto Enthusiast</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="swiper-slide">
-                                <div class="testimonial-item">
-                                    <div class="content">
-                                        <p>I&#039;ve used several trading platforms, but FinFunder stands out for its ease of use and comprehensive features. It&#039;s my go-to for all my crypto investments. The real-time data has been crucial for my investment strategies.</p>
-                                        <div class="designation">
-                                            <h6>Sarah Bennett</h6>
-                                            <span>Investor</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="swiper-slide">
-                                <div class="testimonial-item">
-                                    <div class="content">
-                                        <p>From a developer&#039;s perspective, I appreciate FinFunder&#039;s robust security measures and cutting-edge tech. It&#039;s great to see a platform that not only prioritizes user experience but also the safety and integrity of digital assets.</p>
-                                        <div class="designation">
-                                            <h6>Michael Smith</h6>
-                                            <span>Blockchain Developer</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                            </div>
+    <div class="faq-section position-relative pt-110 pb-110">
+    <div class="linear-right"></div>
+    <div class="container">
+        <div class="row align-items-start gy-5">
+            <div class="col-xl-5 text-start pe-lg-5">
+                <div class="section-title mb-60">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Your Queries Answered: Unveiling the Essentials of Crypto Trading and Investment with FinFunder</p>
+                </div>
+                <a href="" class="i-btn btn--primary btn--lg capsuled">More Questions ?</a>
+                <div class="bet-vecotr style-two">
+                    <img src="default/images/385x278.jpg" alt="Vector image"/>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div
-                class="slider-arrows arrows-style-1 text-center d-flex flex-row justify-content-center align-items-center gap-3 w-100">
-                <div class="testi-prev swiper-arrow" tabindex="0" role="button" aria-label="Previous slide">
-                    <i class="bi bi-arrow-left"></i>
-                </div>
-                <div class="testi-next swiper-arrow" tabindex="0" role="button" aria-label="Next slide">
-                    <i class="bi bi-arrow-right"></i>
+            <div class="col-xl-7">
+                <div class="faq-wrap style-border">
+                <MDBContainer className="mt-5" style={{maxWidth: '1000px'}}>
+      <MDBAccordion alwaysOpen initialActive={1}>
+        <MDBAccordionItem collapseId={1} headerTitle="How it works?">
+        The bot, according to the specified parameters and based on AI, automatically opens transactions on the futures market in the BTC/USDT pair, sets entry points and exit points. The bot uses the trading balance of all users in small parts. This minimizes risks and allows you to always be in profit both on the long and at a short distance
+        </MDBAccordionItem>
+        <MDBAccordionItem collapseId={2} headerTitle=" Mathematics of earnings">
+        The bot brings an average of 0.75 - 1% per day  from the deposit. However do not forget about our commission.  For example: Your deposit 1000 USDT When replenishing, our commission will be 15%, which means that your balance will be credited 850  USDT 1 day  - 856USDT 2 day  - 863USDT 3 day  - 870USDT 4 day  - 877USDT 5 day  - 884USDT 6 day  - 891USDT 7 day  - 898USDT 8 day  - 905USDT 9 day  - 912USDT 10 day - 919USDT 11 day - 926 USDT 12 day - 933USDT   933 USDT will be available for withdrawal. The commission is 5%, 887 USDT will be credited to your balance, taking into account all commissions.
+        </MDBAccordionItem>
+        <MDBAccordionItem collapseId={3} headerTitle="What is the commission?">
+          We do not charge a commission for each completed transaction in the bot, but we charge 15% of the deposit amount and 6% of the withdrawal amount
+        </MDBAccordionItem>
+
+        <MDBAccordionItem collapseId={4} headerTitle=" Minimum deposit?">
+        The minimum deposit amount is 25 USDT, this amount is enough to check the performance of the bot. The recommended amount is from 500 USDT
+        </MDBAccordionItem>
+
+        <MDBAccordionItem collapseId={5} headerTitle=" Bot Trading Exchange?">
+        The bot trades on the most reliable such as Binance exchanges.
+        </MDBAccordionItem>
+
+        <MDBAccordionItem collapseId={6} headerTitle="  Available transactions?">
+        The bot works on the futures market, without trading leverage. At the moment, only in the USDT/BTC pair
+        </MDBAccordionItem>
+      </MDBAccordion>
+    </MDBContainer>
+                                  
                 </div>
             </div>
         </div>
     </div>
 </div>
+</>
   )
 }
 
