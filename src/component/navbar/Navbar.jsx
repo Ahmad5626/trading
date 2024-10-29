@@ -29,26 +29,35 @@ const Navbar = () => {
             </div>
             <ul class="menu-list">
               <li class="menu-item-has-children">
-                <a href="index.html" class="drop-down active">
+             
+                <a href="" class="drop-down active">
+                
                   Home
+                 
                 </a>
+             
               </li>
               <li class="menu-item-has-children">
-                <a href="trades.html" class="drop-down ">
+                <a href="" class="drop-down ">
                   Trade
                 </a>
               </li>
               <li>
-                <a href="page/plans.html">Pricing</a>
+                <a href="">Pricing</a>
               </li>
               <li>
-                <a href="page/features.html">Features</a>
+
+                <a href="">
+                
+                Features</a>
               </li>
               <li>
-                <a href="page/faq.html">FAQ</a>
+                <a href="#">
+                <Link to="/faq">FAQ</Link>
+                </a>
               </li>
               <li>
-                <a href="contact.html" class="">
+                <a href="" class="">
                   Contact
                 </a>
               </li>
