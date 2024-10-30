@@ -9,6 +9,9 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import Faq from './pages/faq/Faq';
+import Trade from './pages/Trade/Trade';
+import Features from './pages/Features/Features';
+import Contact from './pages/Contact/Contact';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
    <Route path='/login' element={<Login/>}/>
    <Route path='/register' element={<Register/>}/>
    <Route path='/faq' element={<Faq/>}/>
+   <Route path='/trade' element={<Trade/>}/>
+   <Route path='/features' element={<Features/>}/>
+   <Route path='/contact' element={<Contact/>}/>
    </Routes>
    </BrowserRouter>
   

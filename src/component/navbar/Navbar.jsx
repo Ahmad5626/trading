@@ -2,6 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  function showMenu(){
+    document.getElementsByClassName("main-nav")[0].classList.toggle("show-menu");
+  }
+   
+  
+
+  
   return (
     <div>
       <header class="header-area style-1">
@@ -23,43 +30,43 @@ const Navbar = () => {
               <div class="mobile-logo-wrap">
                 <img src="https://gainbot.io/assets/files/FEStVr9r2DrfajwT.png" alt="White Logo" />
               </div>
-              <div class="menu-close-btn">
+              <div class="menu-close-btn" onClick={showMenu}>
                 <i class="bi bi-x-lg"></i>
               </div>
             </div>
             <ul class="menu-list">
               <li class="menu-item-has-children">
              
-                <a href="" class="drop-down active">
+            <Link className="active" to="/">
+            Home
+            </Link>
                 
-                  Home
+                
                  
-                </a>
+              
              
               </li>
               <li class="menu-item-has-children">
-                <a href="" class="drop-down ">
-                  Trade
-                </a>
+              <Link to="/trade">  Trade</Link>
+                
+                
               </li>
-              <li>
-                <a href="">Pricing</a>
-              </li>
+            
               <li>
 
-                <a href="">
+                <Link to="/features"> Features</Link>
                 
-                Features</a>
+               
               </li>
               <li>
-                <a href="#">
+               
                 <Link to="/faq">FAQ</Link>
-                </a>
+               
               </li>
               <li>
-                <a href="" class="">
-                  Contact
-                </a>
+               <Link to="/contact"> Contact</Link>
+                 
+                
               </li>
             </ul>
 
@@ -86,7 +93,7 @@ const Navbar = () => {
             
             </a>
 
-            <div class="sidebar-btn d-xl-none d-flex">
+            <div class="sidebar-btn d-xl-none d-flex" onClick={showMenu}>
               <i class="bi bi-list"></i>
             </div>
           </div>

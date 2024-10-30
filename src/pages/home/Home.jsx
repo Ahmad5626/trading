@@ -13,6 +13,8 @@ import Top from '../../component/Top/Top'
 import AdvancedPredictive from '../../component/AdvancedPredictive/AdvancedPredictive'
 import Frequently from '../../component/Frequently/Frequently'
 import Success from '../../component/Success/Success'
+import Real from '../../component/Real/Real'
+import Footer from '../../component/Footer/Footer'
 
 const home = () => {
   return (
@@ -28,9 +30,10 @@ const home = () => {
      <Advanced/>
      <Top/>
      <AdvancedPredictive/>
-     {/* <Frequently/> */}
+     <Frequently/>
      <Success/>
-     
+     <Real/>
+     <Footer/>
     </div>
   )
 }
